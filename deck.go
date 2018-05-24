@@ -19,7 +19,7 @@ func newDeck() deck {
 	cardSuits := []string{"Spades", "Diamonds", "Hearts", "Clubs"}
 	cardValues := []string{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"}
 
-	for _, suit := range cardSuits {
+	for _, suit := range cardSuits { // use _ if the i variable is not used
 		for _, value := range cardValues {
 			cards = append(cards, value+" of "+suit)
 		}
@@ -61,7 +61,7 @@ func (d deck) shuffle() {
 	source := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(source)
 
-	for i := range d {
+	for i := range d { // we do not need to put a variable if we do not iterate on it
 		newPosition := r.Intn(len(d) - 1)
 
 		d[i], d[newPosition] = d[newPosition], d[i] // fancy swaping syntax
