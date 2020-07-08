@@ -3,4 +3,4 @@
 ---------------------------
 first little program with tests to get familiar with some basic Go concepts
 
-last update: now + 1
+last update: now + 2
