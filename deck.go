@@ -46,7 +46,7 @@ func (d deck) saveToFile(fileName string) error {
 }
 
 func newDeckFromFile(fileName string) deck {
-	// add one more line again
+	
 	bs, err := ioutil.ReadFile(fileName)
 	if err != nil {
 		//Option #1 - log the error and return a call to newDeck()
