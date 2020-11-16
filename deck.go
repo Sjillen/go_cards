@@ -46,15 +46,18 @@ func (d deck) saveToFile(fileName string) error {
 }
 
 func newDeckFromFile(fileName string) deck {
+	
 	bs, err := ioutil.ReadFile(fileName)
 	if err != nil {
-		// Option #1 - log the error and return a call to newDeck()
-		// Option #2 - log the error and entirely quit the program
+		//Option #1 - log the error and return a call to newDeck()
+		//Option #2 - log the error and entirely quit the program
 		fmt.Println("Error: ", err)
 		os.Exit(1)
 	}
 	s := strings.Split(string(bs), ",")
 	return deck(s)
+	// fmt.Println(fileName)
+	// return newDeck()
 }
 
 func (d deck) shuffle() {
