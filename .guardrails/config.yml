@@ -5,14 +5,4 @@ notifications:
   slack:        
     enabled: false      
 useGitClone: false           
-monorepo:    
-  - /app1
-  - /java/*:
-      bundles:
-         - java:
-             - semgrep 
-  - /php/*:
-      bundles:
-         - php
-      report:                                                 
-        pullRequest:  "onChangedLinesOnly"
+
