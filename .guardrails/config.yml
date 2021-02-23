@@ -1,8 +1,5 @@
 bundles: auto      
 report:                                                 
   pullRequest:  "onAllFiles"
-notifications:      
-  slack:        
-    enabled: false      
-useGitClone: false           
+        
 
