@@ -1,0 +1,8 @@
+bundles: 
+  - go:
+    - "gosec"
+    - "nancy"      
+report:                                                 
+  pullRequest:  "onAllFiles"
+        
+
