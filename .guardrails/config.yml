@@ -1,4 +1,7 @@
-bundles: auto      
+bundles: 
+  - go:
+    - "gosec"
+    - "nancy"      
 report:                                                 
   pullRequest:  "onAllFiles"
         
